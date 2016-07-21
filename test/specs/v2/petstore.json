@@ -1,21 +1,21 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "This is a sample server Petstore server.  You can find out more about Swagger at <a href=\"http://swagger.io\">http://swagger.io</a> or on irc.freenode.net, #swagger.  For this sample, you can use the api key \"special-key\" to test the authorization filters",
+    "description": "This is a sample server Petstore server.  You can find out more about Swagger at <a href=\"http://swagger.wordnik.com\">http://swagger.wordnik.com</a> or on irc.freenode.net, #swagger.  For this sample, you can use the api key \"special-key\" to test the authorization filters",
     "version": "1.0.0",
     "title": "Swagger Petstore",
-    "termsOfService": "http://swagger.io/terms/",
+    "termsOfService": "http://helloreverb.com/terms/",
     "contact": {
       "url": "http://swagger.io",
       "name": "Your pals at Swagger",
-      "email": "apiteam@swagger.io"
+      "email": "apiteam@wordnik.com"
     },
     "license": {
       "name": "Apache 2.0",
       "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
     }
   },
-  "host": "petstore.swagger.io",
+  "host": "petstore.swagger.wordnik.com",
   "basePath": "/v2",
   "schemes": [
     "http"
@@ -594,8 +594,7 @@
             "name": "password",
             "description": "The password for login in clear text",
             "required": false,
-            "type": "string",
-            "format": "password"
+            "type": "string"
           }
         ],
         "responses": {
@@ -743,7 +742,7 @@
     },
     "petstore_auth": {
       "type": "oauth2",
-      "authorizationUrl": "http://petstore.swagger.io/api/oauth/dialog",
+      "authorizationUrl": "http://petstore.swagger.wordnik.com/api/oauth/dialog",
       "flow": "implicit"
     }
   },
@@ -843,7 +842,7 @@
           "xml": {
             "name": "category"
           },
-          "$ref": "#/definitions/Category"
+          "$ref": "Category"
         },
         "name": {
           "type": "string",
@@ -869,7 +868,7 @@
             "wrapped": true
           },
           "items": {
-            "$ref": "#/definitions/Tag"
+            "$ref": "Tag"
           }
         },
         "status": {
