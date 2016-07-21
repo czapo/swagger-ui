@@ -129,7 +129,7 @@ gulp.task('watch', function() {
 gulp.task('connect', function() {
   connect.server({
     root: 'dist',
-    port: 8089,
+    port: 8036,
     livereload: true
   });
 });
